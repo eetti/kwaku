@@ -11,7 +11,8 @@ body {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./ka-p.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -25,11 +26,11 @@ body {
     padding: 2rem;
 }
 
-h1 {
-    font-size: 4rem;
+.couple {
+    font-size: 6rem;
     margin-bottom: 1rem;
-    font-weight: 300;
-    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-family: 'Stalemate', cursive;
 }
 
 .date {
@@ -69,8 +70,8 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
+    .couple {
+        font-size: 4rem;
     }
     
     .date {
@@ -90,5 +91,9 @@ h1 {
     .icon {
         width: 16px;
         height: 16px;
+    }
+
+    .hero {
+        background-size: contain;
     }
 }
